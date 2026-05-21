@@ -1,0 +1,26 @@
+{
+  "name": "@my-next-template/api",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@my-next-template/db": "workspace:*",
+    "@my-next-template/env": "workspace:*",
+    "@trpc/client": "catalog:",
+    "@trpc/server": "catalog:",
+    "dotenv": "catalog:",
+    "next": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@my-next-template/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

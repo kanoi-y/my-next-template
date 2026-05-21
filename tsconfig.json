@@ -1,0 +1,6 @@
+{
+  "extends": "@my-next-template/config/tsconfig.base.json",
+  "compilerOptions": {
+    "strictNullChecks": true
+  }
+}
