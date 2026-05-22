@@ -2,7 +2,7 @@ import { createClient } from "@libsql/client";
 import { env } from "@my-next-template/env/server";
 import { drizzle } from "drizzle-orm/libsql";
 
-import * as schema from "./schema";
+import { schema } from "./schema";
 
 export function createDb() {
 	const client = createClient({
