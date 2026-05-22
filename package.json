@@ -19,7 +19,10 @@
     "deploy": "turbo -F @my-next-template/infra deploy",
     "destroy": "turbo -F @my-next-template/infra destroy",
     "check": "ultracite check",
-    "fix": "ultracite fix"
+    "fix": "ultracite fix",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "test:watch": "turbo run test:watch"
   },
   "dependencies": {
     "@my-next-template/env": "workspace:*",

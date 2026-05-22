@@ -1,5 +1,16 @@
 {
   "name": "@my-next-template/config",
   "version": "0.0.0",
-  "private": true
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./tsconfig.base.json": "./tsconfig.base.json",
+    "./vitest": "./vitest.shared.ts",
+    "./vitest/setup": "./vitest.setup.ts"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "catalog:",
+    "@vitest/coverage-v8": "catalog:",
+    "vitest": "catalog:"
+  }
 }

@@ -99,12 +99,29 @@ my-next-template/
 │   └── db/          # データベーススキーマとクエリ
 ```
 
+## テスト
+
+本プロジェクトは [Vitest](https://vitest.dev/) を使用します。テストファイルは各パッケージの `src` 配下に `*.test.ts` / `*.test.tsx` として配置します。
+
+- `packages/api` — tRPC ルーターなどのユニットテスト（Node 環境）
+- `packages/ui` — 共有 UI コンポーネントのテスト（jsdom + Testing Library）
+- `apps/web` — Vitest 設定のみ（テスト追加時に利用）
+
+```bash
+pnpm test              # 全パッケージのテストを実行
+pnpm test:coverage     # カバレッジ付きで実行
+pnpm test:watch        # ウォッチモード
+```
+
 ## 利用可能なスクリプト
 
 - `pnpm run dev`: すべてのアプリケーションを開発モードで起動
 - `pnpm run build`: すべてのアプリケーションをビルド
 - `pnpm run dev:web`: Web アプリケーションのみを起動
 - `pnpm run check-types`: 全アプリの TypeScript 型をチェック
+- `pnpm test`: 全パッケージの Vitest テストを実行
+- `pnpm test:coverage`: カバレッジ付きでテストを実行
+- `pnpm test:watch`: テストをウォッチモードで実行
 - `pnpm run db:push`: スキーマ変更をデータベースに反映
 - `pnpm run db:generate`: データベースクライアント / 型を生成
 - `pnpm run db:migrate`: データベースマイグレーションを実行
