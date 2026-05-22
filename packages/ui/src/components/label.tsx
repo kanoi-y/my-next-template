@@ -3,7 +3,7 @@ import type * as React from "react";
 
 type LabelProps = React.ComponentProps<"label"> & {
 	htmlFor: string;
-	"aria-label": string;
+	"aria-label"?: string;
 };
 
 function Label({
