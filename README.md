@@ -87,6 +87,12 @@ import { Button } from "@my-next-template/ui/components/button";
 
 - フォーマットとリントの修正: `pnpm run check`
 
+## 依存関係アップデート運用（Renovate）
+
+- 通常の依存関係アップデートは、Renovate により **月1回（毎月1日）** にまとめてPR作成されます。
+- セキュリティ脆弱性に関するアップデートは `vulnerabilityAlerts` を有効化しているため、月次スケジュールを待たずに優先してPR作成されます。
+- 設定ファイルは `renovate.json`（リポジトリルート）です。
+
 ## プロジェクト構成
 
 ```
