@@ -20,13 +20,12 @@
     "@libsql/client": "catalog:",
     "@my-next-template/env": "workspace:*",
     "dotenv": "catalog:",
-    "drizzle-orm": "^0.45.1",
-    "libsql": "catalog:",
-    "zod": "catalog:"
+    "drizzle-orm": "^0.45.1"
   },
   "devDependencies": {
     "@my-next-template/config": "workspace:*",
     "drizzle-kit": "^0.31.8",
+    "turso": "^0.6.0",
     "typescript": "catalog:"
   }
 }

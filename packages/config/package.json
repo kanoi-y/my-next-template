@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "@testing-library/jest-dom": "catalog:",
-    "@vitest/coverage-v8": "catalog:",
     "vitest": "catalog:"
   }
 }

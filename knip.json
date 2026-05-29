@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/knip@6/schema.json",
+  "tags": ["-lintignore"],
+  "workspaces": {
+    ".": {
+      "ignoreDependencies": ["@biomejs/biome"]
+    },
+    "apps/web": {
+      "entry": ["open-next.config.ts"],
+      "ignoreDependencies": ["tailwindcss"]
+    },
+    "packages/infra": {
+      "entry": ["alchemy.run.ts"]
+    }
+  }
+}

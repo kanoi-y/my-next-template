@@ -22,18 +22,16 @@
     "fix": "ultracite fix",
     "test": "turbo run test",
     "test:coverage": "turbo run test:coverage",
-    "test:watch": "turbo run test:watch"
-  },
-  "dependencies": {
-    "@my-next-template/env": "workspace:*",
-    "dotenv": "catalog:",
-    "zod": "catalog:"
+    "test:watch": "turbo run test:watch",
+    "knip": "knip",
+    "knip:fix": "knip --fix"
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
     "@cloudflare/workers-types": "catalog:",
     "@my-next-template/config": "workspace:*",
     "@types/node": "^22.13.14",
+    "knip": "^6.0.0",
     "turbo": "^2.8.12",
     "typescript": "catalog:",
     "ultracite": "7.7.0"
