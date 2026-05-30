@@ -26,15 +26,44 @@ pnpm install
 
 本プロジェクトは Drizzle ORM と SQLite を使用します。
 
-1. ローカルの SQLite データベースを起動します（任意）:
+1. [Turso Platform CLI](https://docs.turso.tech/cli/introduction) をインストールします（`pnpm run db:local` に必要）。npm の `turso` パッケージ（`npx turso`）とは別物です。
 
-```bash
-pnpm run db:local
-```
+   macOS:
 
-2. 必要に応じて、`apps/web` ディレクトリ内の `.env` ファイルに適切な接続情報を設定します。
+   ```bash
+   brew install tursodatabase/tap/turso
+   ```
 
-3. スキーマをデータベースに適用します:
+   その他:
+
+   ```bash
+   curl -sSfL https://get.tur.so/install.sh | bash
+   ```
+
+2. ローカルの libSQL サーバーを起動します（任意）:
+
+   ```bash
+   pnpm run db:local
+   ```
+
+   `http://127.0.0.1:8080` でサーバーが起動し、変更は `packages/db/local.db` に永続化されます。
+
+   停止する場合:
+
+   ```bash
+   pnpm run db:local:stop
+   ```
+
+   `Address already in use (os error 48)` が出る場合は、前回の `sqld` がポート 8080 を占有したまま残っています。`pnpm run db:local:stop` を実行してから再度 `pnpm run db:local` を起動してください。手動で止める場合は `kill $(lsof -ti :8080)` でも構いません。
+
+3. `apps/web/.env` に接続情報を設定します。ローカル開発の例:
+
+   ```env
+   DATABASE_URL=http://127.0.0.1:8080
+   DATABASE_AUTH_TOKEN=
+   ```
+
+4. スキーマをデータベースに適用します:
 
 ```bash
 pnpm run db:push
@@ -133,4 +162,5 @@ pnpm test:watch        # ウォッチモード
 - `pnpm run db:migrate`: データベースマイグレーションを実行
 - `pnpm run db:studio`: データベーススタジオ UI を開く
 - `pnpm run db:local`: ローカルの SQLite データベースを起動
+- `pnpm run db:local:stop`: ローカルの SQLite データベースを停止
 - `pnpm run check`: Biome によるフォーマットとリントを実行

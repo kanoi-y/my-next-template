@@ -5,12 +5,17 @@ dotenv.config({
 	path: "../../apps/web/.env",
 });
 
+const url = process.env.DATABASE_URL || "";
+const isLocalLibsql =
+	url.startsWith("http://127.0.0.1") || url.startsWith("http://localhost");
+
 export default defineConfig({
 	schema: "./src/schema",
 	out: "./src/migrations",
 	dialect: "turso",
 	dbCredentials: {
-		url: process.env.DATABASE_URL || "",
-		authToken: process.env.DATABASE_AUTH_TOKEN,
+		url,
+		authToken:
+			process.env.DATABASE_AUTH_TOKEN || (isLocalLibsql ? "local" : ""),
 	},
 });
