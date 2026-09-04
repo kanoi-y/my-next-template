@@ -32,7 +32,7 @@
     "@my-next-template/config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.18",
     "@tanstack/react-query-devtools": "^5.91.1",
-    "@types/node": "^20",
+    "@types/node": "^24.13.3",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
