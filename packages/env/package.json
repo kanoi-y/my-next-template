@@ -9,12 +9,12 @@
   },
   "dependencies": {
     "@opennextjs/cloudflare": "catalog:",
-    "@t3-oss/env-nextjs": "^0.13.1"
+    "@t3-oss/env-nextjs": "^0.13.11"
   },
   "devDependencies": {
     "@my-next-template/config": "workspace:*",
     "@my-next-template/infra": "workspace:*",
-    "@types/node": "^22.13.14",
+    "@types/node": "^22.20.1",
     "typescript": "catalog:"
   }
 }

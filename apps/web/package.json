@@ -15,10 +15,10 @@
     "@my-next-template/env": "workspace:*",
     "@my-next-template/ui": "workspace:*",
     "@opennextjs/cloudflare": "catalog:",
-    "@tanstack/react-query": "^5.90.12",
+    "@tanstack/react-query": "^5.102.8",
     "@trpc/client": "catalog:",
     "@trpc/server": "catalog:",
-    "@trpc/tanstack-react-query": "^11.16.0",
+    "@trpc/tanstack-react-query": "^11.18.0",
     "babel-plugin-react-compiler": "^1.0.0",
     "lucide-react": "catalog:",
     "next": "catalog:",
@@ -30,9 +30,9 @@
   "devDependencies": {
     "@cloudflare/workers-types": "catalog:",
     "@my-next-template/config": "workspace:*",
-    "@tailwindcss/postcss": "^4.1.18",
-    "@tanstack/react-query-devtools": "^5.91.1",
-    "@types/node": "^20",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@tanstack/react-query-devtools": "^5.102.8",
+    "@types/node": "^20.19.43",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
@@ -42,6 +42,6 @@
     "typescript": "catalog:",
     "vite-tsconfig-paths": "catalog:",
     "vitest": "catalog:",
-    "wrangler": "^4.77.0"
+    "wrangler": "^4.129.0"
   }
 }
