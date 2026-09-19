@@ -21,11 +21,11 @@
     "@libsql/client": "catalog:",
     "@my-next-template/env": "workspace:*",
     "dotenv": "catalog:",
-    "drizzle-orm": "^0.45.1"
+    "drizzle-orm": "^0.45.2"
   },
   "devDependencies": {
     "@my-next-template/config": "workspace:*",
-    "drizzle-kit": "^0.31.8",
+    "drizzle-kit": "^0.31.10",
     "typescript": "catalog:"
   }
 }
