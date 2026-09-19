@@ -31,11 +31,11 @@
     "@biomejs/biome": "2.4.15",
     "@cloudflare/workers-types": "catalog:",
     "@my-next-template/config": "workspace:*",
-    "@types/node": "^22.13.14",
+    "@types/node": "^24.13.6",
     "knip": "^6.0.0",
     "turbo": "^2.8.12",
     "typescript": "catalog:",
     "ultracite": "7.7.0"
   },
-  "packageManager": "pnpm@11.1.0"
+  "packageManager": "pnpm@12.4.2"
 }
